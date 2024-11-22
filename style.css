@@ -1,0 +1,115 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #a8edea, #fed6e3);
+    color: #333;
+}
+
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+.header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.title {
+    font-size: 2.8rem;
+    animation: fadeIn 2s ease-in-out;
+    color: #444;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    animation: fadeIn 3s ease-in-out;
+    color: #666;
+}
+
+.services, .cta, .testimonials {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.service-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 250px;
+    animation: bounce 2s infinite;
+    color: #444;
+}
+
+.cta .button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta .button:hover {
+    background-color: #007acc;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.testimonial {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 10px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    color: #555;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #007acc;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(240, 240, 240, 0.9);
+    color: #333;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
